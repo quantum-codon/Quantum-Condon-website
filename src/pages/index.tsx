@@ -19,6 +19,7 @@ export default function IndexPage(_props: PageProps) {
     <>
       <Header />
       <main>
+        {/* Durg discovery */}
         <HeroSection />
         <ProblemSolutionSection />
         <TechnologiesSection />
@@ -28,6 +29,7 @@ export default function IndexPage(_props: PageProps) {
         <MarketSection />
         <AdvantageSection />
         <FinalCtaSection />
+        {/* Durg discovery */}
       </main>
       <Footer />
     </>

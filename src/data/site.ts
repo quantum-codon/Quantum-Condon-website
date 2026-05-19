@@ -1,10 +1,9 @@
 export const navLinks = [
-  { label: "Platform", href: "#platform" },
-  { label: "Therapeutics", href: "#therapeutics" },
-  { label: "Technologies", href: "#technologies" },
-  { label: "Applications", href: "#applications" },
-  { label: "About", href: "#about" },
-  { label: "Blog", href: "#blog" }
+  { label: "Drug Discovery", href: "/" },
+  { label: "Biomanufacturing", href: "/biomanufacturing" },
+  { label: "Analytical Services", href: "/analytical-services" },
+  { label: "Training", href: "/training" },
+  { label: "Regulatory", href: "/regulatory" },
 ];
 
 export const metrics = [

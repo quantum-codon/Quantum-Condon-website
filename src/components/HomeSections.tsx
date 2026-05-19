@@ -429,7 +429,7 @@ export function Footer() {
   return (
     <footer className="site-footer py-8">
       <div className="section-wrap flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <a href="#top" className="inline-flex items-center" aria-label="Quantum Codon home">
+        <a href="/" className="inline-flex items-center" aria-label="Quantum Codon home">
           <img src="/brand_logo.png" alt="Quantum Codon" className="h-10 w-auto object-contain" />
         </a>
         <p className="text-sm text-slate-500">© 2026 Quantum Codon R&amp;D. All rights reserved.</p>
