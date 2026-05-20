@@ -10,3 +10,4 @@ npm run develop
 npm run build
 ```
 deploy on netfly
+Page updated
