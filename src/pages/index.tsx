@@ -40,6 +40,7 @@ export const Head: HeadFC = () => (
   <>
     <html lang="en" />
     <title>Quantum Codon | Biology’s code. We write it.</title>
+    <meta name="google-site-verification" content="aRtv48mj2ieJb0cikV0T5VLcZX0QkWOkd9p2vyva68U" />
     <meta
       name="description"
       content="Quantum Codon combines dark genome mining, quantum computing, and AI to unlock novel therapeutics across disease areas."
