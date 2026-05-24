@@ -442,14 +442,14 @@ export function Footer() {
         </nav>
         <div className="flex gap-3">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/company/quantumcodon/"
             aria-label="LinkedIn"
             className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/12 bg-white/[0.03] text-slate-300 transition hover:border-codon-cyan/45 hover:text-white"
           >
             <Icon name="Linkedin" className="h-5 w-5" />
           </a>
           <a
-            href="mailto:contact@quantumcodon.example"
+            href="mailto:contact@quantumcodon.in"
             aria-label="Email Quantum Codon"
             className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/12 bg-white/[0.03] text-slate-300 transition hover:border-codon-cyan/45 hover:text-white"
           >
