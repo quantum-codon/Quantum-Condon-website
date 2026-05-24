@@ -151,7 +151,7 @@ function AnalyticalHero() {
 
 function UnseenFrontierSection() {
   return (
-    <section className="analytical-frontier-section py-16 md:py-24">
+    <section className="analytical-frontier-section py-16 ">
       <div className="section-wrap grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
         <Reveal className="max-w-xl">
           <h2 className="text-balance text-4xl font-semibold leading-tight text-white md:text-5xl ">
@@ -197,7 +197,7 @@ function UnseenFrontierSection() {
 
 function ChallengeSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="The challenge"
@@ -216,7 +216,7 @@ function ChallengeSection() {
 
 function SolutionSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Our solution"
@@ -235,7 +235,7 @@ function SolutionSection() {
 
 function CapabilitiesSection() {
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Advanced analytical capabilities"
@@ -254,7 +254,7 @@ function CapabilitiesSection() {
 
 function WorkflowSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Platform workflow"
@@ -295,7 +295,7 @@ function WorkflowSection() {
 
 function ImpactSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap grid gap-6 xl:grid-cols-2">
         <AnalyticalSummaryPanel
           title="Accelerating Your Journey to"
@@ -317,7 +317,7 @@ function ImpactSection() {
 
 function AnalyticalFinalCta() {
   return (
-    <section id="partner" className="py-16 md:py-24">
+    <section id="partner" className="py-16 ">
       <div className="section-wrap">
         <Reveal className="footer-cta-card analytical-final-cta relative overflow-hidden rounded-3xl p-8 shadow-card md:p-12 lg:p-16">
           <div className="analytical-particles absolute inset-0" aria-hidden="true" />

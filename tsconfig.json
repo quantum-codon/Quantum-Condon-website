@@ -15,5 +15,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src/**/*", "./gatsby-config.ts", "./gatsby-browser.tsx", "./gatsby-ssr.tsx"]
+  "include": ["./src/**/*", "./gatsby-config.ts", "./gatsby-browser.tsx", "./gatsby-ssr.tsx", "./gatsby-node.ts"]
 }

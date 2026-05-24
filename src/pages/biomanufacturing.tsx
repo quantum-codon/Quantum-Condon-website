@@ -105,7 +105,7 @@ function BiomanufacturingHero() {
 
 function BioRevolutionSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
         <Reveal>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-codon-orange/85">
@@ -151,7 +151,7 @@ function BioRevolutionSection() {
 
 function MissionSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Our mission"
@@ -170,7 +170,7 @@ function MissionSection() {
 
 function IndustrialScaleSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <Reveal className="bio-industrial-scale relative overflow-hidden rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="bio-particles absolute inset-0" aria-hidden="true" />
@@ -206,7 +206,7 @@ function IndustrialScaleSection() {
 
 function MarketOpportunitySection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Market opportunity"
@@ -225,7 +225,7 @@ function MarketOpportunitySection() {
 
 function ApproachSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Our approach"
@@ -244,7 +244,7 @@ function ApproachSection() {
 
 function ExecutionWorkflowSection() {
   return (
-    <section id="platform" className="py-16 md:py-24">
+    <section id="platform" className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Execution operating system"
@@ -285,7 +285,7 @@ function ExecutionWorkflowSection() {
 
 function InvestmentFocusSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Investment focus"
@@ -304,7 +304,7 @@ function InvestmentFocusSection() {
 
 function ExpertiseSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 ">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Core expertise"
@@ -323,7 +323,7 @@ function ExpertiseSection() {
 
 function BioFinalCta() {
   return (
-    <section id="partner" className="py-16 md:py-24">
+    <section id="partner" className="py-16 ">
       <div className="section-wrap">
         <Reveal className="footer-cta-card bio-final-cta relative overflow-hidden rounded-3xl p-8 shadow-card md:p-12 lg:p-16">
           <div className="bio-particles absolute inset-0" aria-hidden="true" />

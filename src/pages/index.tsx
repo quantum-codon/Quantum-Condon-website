@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Header } from "../components/Header";
+import { SEO } from "../components/Seo";
 import {
   AdvantageSection,
   ApplicationsSection,
@@ -37,15 +38,17 @@ export default function IndexPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Quantum Codon | Biology’s code. We write it.</title>
-    <meta name="google-site-verification" content="aRtv48mj2ieJb0cikV0T5VLcZX0QkWOkd9p2vyva68U" />
-    <meta
-      name="description"
-      content="Quantum Codon combines dark genome mining, quantum computing, and AI to unlock novel therapeutics across disease areas."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Quantum Codon | Biology's code. We write it."
+    description="Quantum Codon combines dark genome mining, quantum computing, and AI to unlock novel therapeutics across disease areas faster and more precisely."
+    pathname="/"
+    image="/quantum-codon-hero-dna.png"
+    keywords={[
+      "Quantum Codon",
+      "dark genome mining",
+      "AI drug discovery",
+      "quantum computing therapeutics",
+      "novel therapeutics"
+    ]}
+  />
 );

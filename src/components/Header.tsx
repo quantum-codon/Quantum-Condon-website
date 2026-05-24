@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { navLinks } from "../data/site";
 
 export function Header() {
@@ -13,11 +13,37 @@ export function Header() {
         </a>
 
         <nav className="hidden items-center gap-5 text-sm text-slate-300 xl:gap-8 lg:flex" aria-label="Primary navigation">
-          {navLinks.map((link) => (
-            <a key={link.label} href={link.href} className="transition duration-300 hover:text-white">
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <div key={link.label} className="group relative">
+                <a
+                  href={link.href}
+                  className="inline-flex items-center gap-1.5 transition duration-300 hover:text-white focus:text-white focus:outline-none"
+                  aria-haspopup="true"
+                >
+                  {link.label}
+                  <ChevronDown className="h-3.5 w-3.5 transition duration-300 group-hover:rotate-180" aria-hidden="true" />
+                </a>
+                <div className="pointer-events-none invisible absolute left-1/2 top-full z-50 w-64 -translate-x-1/2 pt-5 opacity-0 transition duration-200 group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+                  <div className="overflow-hidden rounded-xl border border-white/10 bg-codon-black/95 p-2 shadow-2xl shadow-codon-blue/10 backdrop-blur-2xl">
+                    {link.children.map((child) => (
+                      <a
+                        key={child.label}
+                        href={child.href}
+                        className="block rounded-lg px-4 py-3 text-sm text-slate-300 transition duration-300 hover:bg-white/[0.06] hover:text-white focus:bg-white/[0.06] focus:text-white focus:outline-none"
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a key={link.label} href={link.href} className="transition duration-300 hover:text-white">
+                {link.label}
+              </a>
+            )
+          )}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
@@ -44,16 +70,40 @@ export function Header() {
       {open ? (
         <nav className="border-t border-white/10 bg-codon-black/95 px-4 py-5 lg:hidden" aria-label="Mobile navigation">
           <div className="mx-auto grid max-w-xl gap-2">
-            {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="rounded-lg px-4 py-3 text-base text-slate-200 transition hover:bg-white/[0.06] hover:text-white"
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label} className="grid gap-1">
+                  <a
+                    href={link.href}
+                    className="rounded-lg px-4 py-3 text-base text-slate-200 transition hover:bg-white/[0.06] hover:text-white"
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                  <div className="grid gap-1 border-l border-codon-cyan/20 pl-4">
+                    {link.children.map((child) => (
+                      <a
+                        key={child.label}
+                        href={child.href}
+                        className="rounded-lg px-4 py-2.5 text-sm text-slate-400 transition hover:bg-white/[0.06] hover:text-white"
+                        onClick={() => setOpen(false)}
+                      >
+                        {child.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="rounded-lg px-4 py-3 text-base text-slate-200 transition hover:bg-white/[0.06] hover:text-white"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <a
               href="#partner"
               className="mt-3 inline-flex min-h-12 items-center justify-center rounded-lg border border-codon-blue bg-codon-blue px-5 py-3 text-sm font-semibold text-white"
