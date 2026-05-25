@@ -12,3 +12,4 @@ npm run build
 deploy on netfly
 Page updated
 added verfication code 20 may
+new page and seo updsated 24 may
