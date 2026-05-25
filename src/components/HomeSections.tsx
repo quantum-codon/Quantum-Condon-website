@@ -70,7 +70,7 @@ export function HeroSection() {
             {metrics.map((metric) => (
               <div
                 key={metric.value}
-                className="gradient-border flex min-h-20 items-center gap-3 overflow-hidden rounded-lg p-3 backdrop-blur-xl transition duration-300"
+                className="hero-metric-card gradient-border flex min-h-20 items-center gap-3 overflow-hidden rounded-lg p-3 backdrop-blur-xl transition duration-300"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-codon-cyan/30 bg-codon-blue/10 text-codon-cyan">
                   <Icon name={metric.icon} className="h-5 w-5" />

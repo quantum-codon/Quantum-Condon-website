@@ -8,6 +8,7 @@ import { ButtonLink } from "../components/ButtonLink";
 import { Icon } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import { SEO } from "../components/Seo";
 import {
   analyticalCapabilities,
   analyticalChallenges,
@@ -366,14 +367,11 @@ export default function AnalyticalServicesPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Analytical Services | Quantum Codon</title>
-    <meta
-      name="description"
-      content="Quantum Codon Analytical Services combines bioanalysis, AI-driven insights, and audit-ready reporting to accelerate therapeutic development."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Analytical Services | Quantum Codon"
+    description="Quantum Codon Analytical Services combines bioanalysis, AI-driven insights, and audit-ready reporting to accelerate therapeutic development."
+    pathname="/analytical-services/"
+    image="/brand_logo.png"
+    keywords={["Quantum Codon", "QuantumCodon", "analytical services", "bioanalysis", "LC-MS", "HPLC", "proteomics"]}
+  />
 );

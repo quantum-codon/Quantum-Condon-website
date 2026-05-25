@@ -7,6 +7,7 @@ import { ButtonLink } from "../components/ButtonLink";
 import { Icon } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import { SEO } from "../components/Seo";
 
 const heroStats = [
   {
@@ -836,14 +837,11 @@ export default function QcPkdPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Deep Codon PKD | Quantum Codon</title>
-    <meta
-      name="description"
-      content="Deep Codon PKD by Quantum Codon converts dark genome sequences into first-in-class therapeutic candidates through AI, quantum computing, and validation."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Deep Codon PKD | Quantum Codon"
+    description="Deep Codon PKD by Quantum Codon converts dark genome sequences into first-in-class therapeutic candidates through AI, quantum computing, and validation."
+    pathname="/qc-pkd/"
+    image="/pkd_hero.png"
+    keywords={["Quantum Codon", "QuantumCodon", "Deep Codon PKD", "dark genome", "therapeutic candidates"]}
+  />
 );

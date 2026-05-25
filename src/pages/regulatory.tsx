@@ -8,6 +8,7 @@ import { ButtonLink } from "../components/ButtonLink";
 import { Icon } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import { SEO } from "../components/Seo";
 import {
   investorConfidenceCards,
   regulatoryAudienceCards,
@@ -387,14 +388,11 @@ export default function RegulatoryPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Regulatory Strategy | Quantum Codon</title>
-    <meta
-      name="description"
-      content="Quantum Codon regulatory strategy services help biotech, biomanufacturing, and BioAI ventures turn complex compliance pathways into investor-ready strategy."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Regulatory Strategy | Quantum Codon"
+    description="Quantum Codon regulatory strategy services help biotech, biomanufacturing, and BioAI ventures turn complex compliance pathways into investor-ready strategy."
+    pathname="/regulatory/"
+    image="/brand_logo.png"
+    keywords={["Quantum Codon", "QuantumCodon", "regulatory strategy", "FDA strategy", "GMP compliance", "BioAI regulatory"]}
+  />
 );

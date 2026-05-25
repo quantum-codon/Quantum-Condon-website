@@ -1,6 +1,7 @@
 import * as React from "react";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { navLinks } from "../data/site";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
   const [open, setOpen] = React.useState(false);
@@ -47,6 +48,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <ThemeToggle />
           <a
             href="#partner"
             className="group inline-flex min-h-11 items-center gap-3 rounded-lg border border-codon-blue/60 bg-white/[0.03] px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:bg-codon-blue/15 focus:outline-none focus:ring-2 focus:ring-codon-cyan/80"
@@ -104,6 +106,9 @@ export function Header() {
                 </a>
               )
             )}
+            <div className="mt-3 flex justify-center">
+              <ThemeToggle className="w-full justify-center" />
+            </div>
             <a
               href="#partner"
               className="mt-3 inline-flex min-h-12 items-center justify-center rounded-lg border border-codon-blue bg-codon-blue px-5 py-3 text-sm font-semibold text-white"

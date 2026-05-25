@@ -8,6 +8,7 @@ import { ButtonLink } from "../components/ButtonLink";
 import { Icon } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import { SEO } from "../components/Seo";
 import {
   enrollmentCards,
   trainingAdvantages,
@@ -350,14 +351,11 @@ export default function TrainingPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Training Programs | Quantum Codon</title>
-    <meta
-      name="description"
-      content="Quantum Codon short-term certificate programs for biotech, chemical sciences, and BioAI help learners build practical skills and career-ready portfolios."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Training Programs | Quantum Codon"
+    description="Quantum Codon short-term certificate programs for biotech, chemical sciences, and BioAI help learners build practical skills and career-ready portfolios."
+    pathname="/training/"
+    image="/brand_logo.png"
+    keywords={["Quantum Codon", "QuantumCodon", "biotech training", "BioAI training", "certificate programs"]}
+  />
 );

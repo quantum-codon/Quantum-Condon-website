@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Header } from "../components/Header";
 import { Footer } from "../components/HomeSections";
 import { ButtonLink } from "../components/ButtonLink";
+import { SEO } from "../components/Seo";
 
 export default function NotFoundPage(_props: PageProps) {
   return (
@@ -32,10 +33,10 @@ export default function NotFoundPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Page Not Found | Quantum Codon</title>
-    <meta name="description" content="The requested Quantum Codon page could not be found." />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Page Not Found | Quantum Codon"
+    description="The requested Quantum Codon page could not be found."
+    pathname="/404/"
+    noindex
+  />
 );

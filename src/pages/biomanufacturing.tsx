@@ -8,6 +8,7 @@ import { ButtonLink } from "../components/ButtonLink";
 import { Icon } from "../components/Icon";
 import { Reveal } from "../components/Reveal";
 import { SectionHeading } from "../components/SectionHeading";
+import { SEO } from "../components/Seo";
 import {
   bioApproachCards,
   bioExpertiseCards,
@@ -376,14 +377,11 @@ export default function BiomanufacturingPage(_props: PageProps) {
 }
 
 export const Head: HeadFC = () => (
-  <>
-    <html lang="en" />
-    <title>Biomanufacturing | Quantum Codon</title>
-    <meta
-      name="description"
-      content="Quantum Codon Biomanufacturing helps convert biological innovation into industrial-scale execution for sustainable industry."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-  </>
+  <SEO
+    title="Biomanufacturing | Quantum Codon"
+    description="Quantum Codon Biomanufacturing helps convert biological innovation into industrial-scale execution for sustainable industry."
+    pathname="/biomanufacturing/"
+    image="/brand_logo.png"
+    keywords={["Quantum Codon", "QuantumCodon", "biomanufacturing", "bioindustrial", "industrial biotechnology"]}
+  />
 );

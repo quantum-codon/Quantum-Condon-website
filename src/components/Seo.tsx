@@ -10,9 +10,10 @@ type SeoProps = {
 };
 
 const siteName = "Quantum Codon";
-const siteUrl = (process.env.GATSBY_SITE_URL || process.env.SITE_URL || "https://quantumcodon.com").replace(/\/$/, "");
+const siteUrl = (process.env.GATSBY_SITE_URL || process.env.SITE_URL || "https://quantumcodon.in").replace(/\/$/, "");
 const defaultImage = "/brand_logo.png";
 const googleVerification = "aRtv48mj2ieJb0cikV0T5VLcZX0QkWOkd9p2vyva68U";
+const brandAliases = ["QuantumCodon", "Quantum Codon Pvt Ltd", "Quantum Codon Private Limited"];
 
 function absoluteUrl(path: string) {
   if (/^https?:\/\//i.test(path)) {
@@ -41,6 +42,7 @@ export function SEO({
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
         name: siteName,
+        alternateName: brandAliases,
         url: siteUrl,
         logo: absoluteUrl("/brand_logo.png"),
         sameAs: []
@@ -49,7 +51,9 @@ export function SEO({
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         name: siteName,
+        alternateName: brandAliases,
         url: siteUrl,
+        inLanguage: "en",
         publisher: {
           "@id": `${siteUrl}/#organization`
         }
@@ -60,6 +64,7 @@ export function SEO({
         url: canonical,
         name: pageTitle,
         description,
+        inLanguage: "en",
         isPartOf: {
           "@id": `${siteUrl}/#website`
         },
@@ -79,6 +84,8 @@ export function SEO({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="robots" content={robots} />
       <meta name="google-site-verification" content={googleVerification} />
+      <meta name="application-name" content="QuantumCodon" />
+      <meta name="apple-mobile-web-app-title" content="QuantumCodon" />
       <meta name="theme-color" content="#020510" />
       <link rel="canonical" href={canonical} />
       <link rel="icon" href="/favicon.ico" />

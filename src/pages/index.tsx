@@ -39,12 +39,14 @@ export default function IndexPage(_props: PageProps) {
 
 export const Head: HeadFC = () => (
   <SEO
-    title="Quantum Codon | Biology's code. We write it."
-    description="Quantum Codon combines dark genome mining, quantum computing, and AI to unlock novel therapeutics across disease areas faster and more precisely."
+    title="Quantum Codon (QuantumCodon) | Biology's code. We write it."
+    description="Quantum Codon, also written as QuantumCodon, combines dark genome mining, quantum computing, and AI to unlock novel therapeutics across disease areas faster and more precisely."
     pathname="/"
     image="/quantum-codon-hero-dna.png"
     keywords={[
       "Quantum Codon",
+      "QuantumCodon",
+      "Quantum Codon Pvt Ltd",
       "dark genome mining",
       "AI drug discovery",
       "quantum computing therapeutics",
