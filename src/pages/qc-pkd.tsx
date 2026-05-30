@@ -752,17 +752,6 @@ function InvestorSection() {
             </ButtonLink>
           </div>
         </Reveal>
-        <Reveal delay={0.1} className="deep-invest-card rounded-2xl p-6 md:p-7">
-          <h3 className="text-2xl font-semibold text-white">Investment Snapshot</h3>
-          <div className="mt-6 grid gap-3">
-            {investorRows.map(([label, value]) => (
-              <div key={label} className="flex items-baseline justify-between gap-4 border-b border-white/10 pb-3">
-                <span className="text-sm text-slate-400">{label}</span>
-                <strong className="text-right text-base font-semibold text-white">{value}</strong>
-              </div>
-            ))}
-          </div>
-        </Reveal>
       </div>
       <div className="section-wrap mt-8 grid gap-5 md:grid-cols-3">
         {moatCards.map((card, index) => (
