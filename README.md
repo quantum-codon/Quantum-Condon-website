@@ -15,3 +15,4 @@ added verfication code 20 may
 new page and seo updsated 24 may
 updated theme preference 25th may
 changed to pubic repo
+nav and snapshoot updated
