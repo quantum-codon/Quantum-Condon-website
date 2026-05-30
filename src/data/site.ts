@@ -1,12 +1,13 @@
 export const navLinks = [
-  {
-    label: "Drug Discovery",
-    href: "/",
-    children: [
-      { label: "Drug Discovery Platform", href: "/" },
-      { label: "Deep Codon PKD", href: "/qc-pkd/" }
-    ]
-  },
+  // {
+  //   label: "Drug Discovery",
+  //   href: "/",
+  //   children: [
+  //     { label: "Drug Discovery Platform", href: "/" },
+  //     { label: "Deep Codon PKD", href: "/qc-pkd/" }
+  //   ]
+  // },
+  { label: "Drug Discovery", href: "/" },
   { label: "Biomanufacturing", href: "/biomanufacturing" },
   { label: "Analytical Services", href: "/analytical-services" },
   { label: "Training", href: "/training" },
